@@ -1,0 +1,545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="10" passed="2" failed="8" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-11T07:22:24 IST" name="Suite" finished-at="2025-09-11T07:24:50 IST" duration-ms="145711">
+    <groups>
+    </groups>
+    <test started-at="2025-09-11T07:22:24 IST" name="Test" finished-at="2025-09-11T07:24:50 IST" duration-ms="145711">
+      <class name="testScript.AdminTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:01 IST" name="initializeBrowser" finished-at="2025-09-11T07:24:08 IST" duration-ms="6908" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyadduser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:08 IST" name="verifyadduser" description="verify add user" finished-at="2025-09-11T07:24:08 IST" duration-ms="80" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.AdminTest.verifyadduser(AdminTest.java:21)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyadduser -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:08 IST" name="closeBrowser" finished-at="2025-09-11T07:24:08 IST" duration-ms="4" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:08 IST" name="driverQuit" finished-at="2025-09-11T07:24:10 IST" duration-ms="1982" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyadduser status=FAILURE method=AdminTest.verifyadduser()[pri:0, instance:testScript.AdminTest@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:10 IST" name="initializeBrowser" finished-at="2025-09-11T07:24:16 IST" duration-ms="5982" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyhomepage()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:16 IST" name="verifyhomepage" description="verify home page" finished-at="2025-09-11T07:24:16 IST" duration-ms="51" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.AdminTest.verifyhomepage(AdminTest.java:65)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyhomepage -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:16 IST" name="closeBrowser" finished-at="2025-09-11T07:24:16 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:16 IST" name="driverQuit" finished-at="2025-09-11T07:24:19 IST" duration-ms="3435" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyhomepage status=FAILURE method=AdminTest.verifyhomepage()[pri:0, instance:testScript.AdminTest@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:19 IST" name="initializeBrowser" finished-at="2025-09-11T07:24:27 IST" duration-ms="7787" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifysearch()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:27 IST" name="verifysearch" description="verify search user" finished-at="2025-09-11T07:24:27 IST" duration-ms="45" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.AdminTest.verifysearch(AdminTest.java:43)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifysearch -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:27 IST" name="closeBrowser" finished-at="2025-09-11T07:24:27 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.AdminTest@41f69e84]" started-at="2025-09-11T07:24:27 IST" name="driverQuit" finished-at="2025-09-11T07:24:30 IST" duration-ms="2987" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifysearch status=FAILURE method=AdminTest.verifysearch()[pri:0, instance:testScript.AdminTest@41f69e84] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.AdminTest -->
+      <class name="testScript.NewsTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:30 IST" name="initializeBrowser" finished-at="2025-09-11T07:24:35 IST" duration-ms="5210" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyaddnews()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:35 IST" name="verifyaddnews" finished-at="2025-09-11T07:24:38 IST" duration-ms="2946" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyaddnews -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:38 IST" name="closeBrowser" finished-at="2025-09-11T07:24:38 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:38 IST" name="driverQuit" finished-at="2025-09-11T07:24:40 IST" duration-ms="2266" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyaddnews status=SUCCESS method=NewsTest.verifyaddnews()[pri:0, instance:testScript.NewsTest@e3b3b2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:40 IST" name="initializeBrowser" finished-at="2025-09-11T07:24:46 IST" duration-ms="6003" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyresetnews()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:46 IST" name="verifyresetnews" finished-at="2025-09-11T07:24:48 IST" duration-ms="1597" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyresetnews -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:48 IST" name="closeBrowser" finished-at="2025-09-11T07:24:48 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.NewsTest@e3b3b2f]" started-at="2025-09-11T07:24:48 IST" name="driverQuit" finished-at="2025-09-11T07:24:50 IST" duration-ms="1956" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyresetnews status=SUCCESS method=NewsTest.verifyresetnews()[pri:0, instance:testScript.NewsTest@e3b3b2f] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.NewsTest -->
+      <class name="testScript.LoginTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:04 IST" name="initializeBrowser" finished-at="2025-09-11T07:23:15 IST" duration-ms="11044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyloginwithValidCredentials()[pri:1, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:15 IST" name="verifyloginwithValidCredentials" description="verify login with Valid Credentials" finished-at="2025-09-11T07:23:15 IST" duration-ms="59" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.LoginTest.verifyloginwithValidCredentials(LoginTest.java:17)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginwithValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:15 IST" name="closeBrowser" finished-at="2025-09-11T07:23:15 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:15 IST" name="driverQuit" finished-at="2025-09-11T07:23:18 IST" duration-ms="2973" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginwithValidCredentials status=FAILURE method=LoginTest.verifyloginwithValidCredentials()[pri:1, instance:testScript.LoginTest@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:18 IST" name="initializeBrowser" finished-at="2025-09-11T07:23:33 IST" duration-ms="15540" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyloginwithValidusernameinvalidpassword()[pri:2, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:33 IST" name="verifyloginwithValidusernameinvalidpassword" description="verify login with Valid username invalid password" finished-at="2025-09-11T07:23:33 IST" duration-ms="55" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.LoginTest.verifyloginwithValidusernameinvalidpassword(LoginTest.java:32)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginwithValidusernameinvalidpassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:33 IST" name="closeBrowser" finished-at="2025-09-11T07:23:33 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:33 IST" name="driverQuit" finished-at="2025-09-11T07:23:36 IST" duration-ms="2622" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginwithValidusernameinvalidpassword status=FAILURE method=LoginTest.verifyloginwithValidusernameinvalidpassword()[pri:2, instance:testScript.LoginTest@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:36 IST" name="initializeBrowser" finished-at="2025-09-11T07:23:46 IST" duration-ms="10201" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyloginwithinValidusernamevalidpassword()[pri:3, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:46 IST" name="verifyloginwithinValidusernamevalidpassword" description="verify login with inValid username valid password" finished-at="2025-09-11T07:23:46 IST" duration-ms="53" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.LoginTest.verifyloginwithinValidusernamevalidpassword(LoginTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginwithinValidusernamevalidpassword -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:46 IST" name="closeBrowser" finished-at="2025-09-11T07:23:46 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:46 IST" name="driverQuit" finished-at="2025-09-11T07:23:50 IST" duration-ms="3279" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginwithinValidusernamevalidpassword status=FAILURE method=LoginTest.verifyloginwithinValidusernamevalidpassword()[pri:3, instance:testScript.LoginTest@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:50 IST" name="initializeBrowser" finished-at="2025-09-11T07:23:58 IST" duration-ms="8731" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyloginwithinValidCredentials()[pri:4, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:58 IST" name="verifyloginwithinValidCredentials" description="verify login with inValid Credentials" finished-at="2025-09-11T07:23:58 IST" duration-ms="52" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.LoginTest.verifyloginwithinValidCredentials(LoginTest.java:58)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyloginwithinValidCredentials -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:58 IST" name="closeBrowser" finished-at="2025-09-11T07:23:58 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.LoginTest@769a1df5]" started-at="2025-09-11T07:23:58 IST" name="driverQuit" finished-at="2025-09-11T07:24:01 IST" duration-ms="2199" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyloginwithinValidCredentials status=FAILURE method=LoginTest.verifyloginwithinValidCredentials()[pri:4, instance:testScript.LoginTest@769a1df5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.LoginTest -->
+      <class name="testScript.HomeTest">
+        <test-method is-config="true" signature="initializeBrowser()[pri:0, instance:testScript.HomeTest@3aa078fd]" started-at="2025-09-11T07:22:24 IST" name="initializeBrowser" finished-at="2025-09-11T07:22:54 IST" duration-ms="29407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initializeBrowser -->
+        <test-method signature="verifyLogout()[pri:0, instance:testScript.HomeTest@3aa078fd]" started-at="2025-09-11T07:22:54 IST" name="verifyLogout" description="Verify user logout" finished-at="2025-09-11T07:23:00 IST" duration-ms="6140" status="FAIL">
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.apache.poi.xssf.usermodel.XSSFSheet.getRow(int)" because "utilities.ExcelUtility.s" is null
+at utilities.ExcelUtility.getStringData(ExcelUtility.java:32)
+at testScript.HomeTest.verifyLogout(HomeTest.java:18)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLogout -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:testScript.HomeTest@3aa078fd]" started-at="2025-09-11T07:23:00 IST" name="closeBrowser" finished-at="2025-09-11T07:23:00 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeBrowser -->
+        <test-method is-config="true" signature="driverQuit(org.testng.ITestResult)[pri:0, instance:testScript.HomeTest@3aa078fd]" started-at="2025-09-11T07:23:00 IST" name="driverQuit" finished-at="2025-09-11T07:23:04 IST" duration-ms="3930" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyLogout status=FAILURE method=HomeTest.verifyLogout()[pri:0, instance:testScript.HomeTest@3aa078fd] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- driverQuit -->
+      </class> <!-- testScript.HomeTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
