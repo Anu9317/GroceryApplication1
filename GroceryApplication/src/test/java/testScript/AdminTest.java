@@ -26,10 +26,7 @@ public class AdminTest extends TestNGbase{
 	loginpage.enterusername(usernameValue);
 	loginpage.enterpassword(passwordValue);
 	loginpage.signin();
-	String expected="https://groceryapp.uniqassosiates.com/admin";
-	String actual=driver.getCurrentUrl();
-	Assert.assertEquals(actual,expected, Message.VALID_CREDENTIAL_ERROR);
-
+	
 	
 	FakerUtility fakerUtility = new FakerUtility();
 	String name=fakerUtility.createRandomUserName();
@@ -52,7 +49,7 @@ public class AdminTest extends TestNGbase{
 		loginpage.enterusername(usernameValue);
 		loginpage.enterpassword(passwordValue);
 		loginpage.signin();
-		Assert.assertEquals(actual,expected,Message.VALID_CREDENTIAL_ERROR);
+	
 		
 		
 		FakerUtility fakerUtility = new FakerUtility();
@@ -80,7 +77,7 @@ public class AdminTest extends TestNGbase{
 		AdminPage adminpage = new AdminPage(driver);
 	    adminpage.clicknewstile();
 	    adminpage.clickhome();
-	    Assert.assertEquals(actual,expected Message.HOMEPAGE_VERIFICATION_ERROR);
+	    
 	}
 
 

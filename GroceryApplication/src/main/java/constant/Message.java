@@ -11,6 +11,6 @@ public static final String USER_CREATION_SUCCESS="User created successfully";
 public static final String USER_SEARCH_ERROR="User Search failed";
 public static final String HOMEPAGE_VERIFICATION_ERROR="Homepage verification failed";
 public static final String NEWS_CREATION_ERROR="Unable to add news";
-public static final String NEWS_RETEST_ERROR="Retest did not navigate back to News list page";
+public static final String NEWS_RESET_ERROR="Retest did not navigate back to News list page";
 
 }

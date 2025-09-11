@@ -42,18 +42,11 @@ public void verifyresetnews() throws IOException {
 	loginpage.signin();
 	NewsPage newspage = new NewsPage(driver);
 	newspage.clicknewstiles();
-	//WebElement newsclick=driver.findElement(By.xpath("//a[@class='btn btn-rounded btn-danger' and @href='https://groceryapp.uniqassosiates.com/admin/news/add']"));
-			//newsclick.click();
-			//WebElement enternews=driver.findElement(By.xpath("//textarea[@placeholder='Enter the news']"));
-			//enternews.sendKeys("This is a sample news");
-			//WebElement savenews=driver.findElement(By.xpath("//button[@name='create']"));
-			//savenews.click();
-			//WebElement searchButton = driver.findElement(By.xpath("//button[@class='btn btn-danger btn-fix']"));
-			//searchButton.click();
+	
 			newspage.clickresetbutton();
 			String expectedUrl = "https://groceryapp.uniqassosiates.com/admin/list-news";
 			String actualUrl = driver.getCurrentUrl();
-			Assert.assertEquals(actualUrl, expectedUrl, Message.NEWS_RETEST_ERROR);
+			Assert.assertEquals(actualUrl, expectedUrl, Message.NEWS_RESET_ERROR);
 
 	
 }

@@ -37,7 +37,7 @@ public class LoginTest extends TestNGbase{
 		loginpage.signin();
 		String expected="https://groceryapp.uniqassosiates.com/admin";
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual, expected,Message.INVALID_PASSWORD_ERROR);
+		Assert.assertEquals(actual,expected,Message.INVALID_PASSWORD_ERROR);
 		
 }
 	@Test(priority = 3,description="verify login with inValid username valid password")
@@ -50,7 +50,7 @@ public class LoginTest extends TestNGbase{
 		loginpage.signin();
 		String expected="https://groceryapp.uniqassosiates.com/admin";
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual, expected,Message.INVALID_USERNAME_ERROR);
+		Assert.assertEquals(actual,expected,Message.INVALID_USERNAME_ERROR);
 		
 	}
 	@Test(priority = 4,description="verify login with inValid Credentials")
@@ -63,7 +63,7 @@ public class LoginTest extends TestNGbase{
 		loginpage.signin();
 		String expected="https://groceryapp.uniqassosiates.com/admin";
 		String actual=driver.getCurrentUrl();
-		Assert.assertEquals(actual, expected,Message.INVALID_CREDENTIAL_ERROR);
+		Assert.assertEquals(actual,expected,Message.INVALID_CREDENTIAL_ERROR);
 		
 		
 	
