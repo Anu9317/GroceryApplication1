@@ -6,7 +6,7 @@
  
  </listener>
  </listeners>
-  <test thread-count="5" name="Test">
+  <test thread-count="5" name="chrometest">
   <parameter name="browser" value="chrome"></parameter>
     <classes>
       <!--<class name="testScript.HomeTest"/>-->
@@ -18,5 +18,19 @@
       <!--<class name="testScript.AdminTest"/>
       <class name="testScript.NewsTest"/>-->
     </classes>
+    
   </test> <!-- Test -->
+  <test thread-count="5" name="FirefoxTest">
+   <parameter name="browser" value="firefox"></parameter>
+    <classes>
+      <!--<class name="testScript.HomeTest"/>-->
+      <class name="testScript.LoginTest">
+     <!-- <methods>
+      <include name="verifyloginwithValidCredentials"></include>
+      </methods>-->
+      </class>
+      <!--<class name="testScript.AdminTest"/>
+      <class name="testScript.NewsTest"/>-->
+    </classes>
+    </test>
 </suite> <!-- Suite -->

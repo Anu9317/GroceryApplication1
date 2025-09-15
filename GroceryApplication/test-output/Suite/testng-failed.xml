@@ -4,37 +4,32 @@
   <listeners>
     <listener class-name="reportGeneration.Listener"/>
   </listeners>
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="chrometest(failed)">
+    <parameter name="browser" value="chrome"/>
     <classes>
       <class name="testScript.LoginTest">
         <methods>
           <include name="driverQuit"/>
-          <include name="verifyloginwithValidCredentials"/>
-          <include name="verifyloginwithValidusernameinvalidpassword"/>
           <include name="verifyloginwithinValidusernamevalidpassword"/>
           <include name="initializeBrowser"/>
+          <include name="verifyloginwithinValidCredentials" invocation-numbers="0 1"/>
           <include name="closeBrowser"/>
-          <include name="verifyloginwithinValidCredentials"/>
         </methods>
       </class> <!-- testScript.LoginTest -->
-      <class name="testScript.HomeTest">
-        <methods>
-          <include name="verifyLogout"/>
-          <include name="driverQuit"/>
-          <include name="initializeBrowser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testScript.HomeTest -->
-      <class name="testScript.AdminTest">
-        <methods>
-          <include name="driverQuit"/>
-          <include name="verifyhomepage"/>
-          <include name="verifysearch"/>
-          <include name="initializeBrowser"/>
-          <include name="verifyadduser"/>
-          <include name="closeBrowser"/>
-        </methods>
-      </class> <!-- testScript.AdminTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- chrometest(failed) -->
+  <test thread-count="5" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="testScript.LoginTest">
+        <methods>
+          <include name="driverQuit"/>
+          <include name="verifyloginwithinValidusernamevalidpassword"/>
+          <include name="closeBrowser"/>
+          <include name="verifyloginwithinValidCredentials" invocation-numbers="0 1"/>
+          <include name="initializeBrowser"/>
+        </methods>
+      </class> <!-- testScript.LoginTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
 </suite> <!-- Failed suite [Suite] -->
