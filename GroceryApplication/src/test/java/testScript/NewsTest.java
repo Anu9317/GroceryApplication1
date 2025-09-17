@@ -11,37 +11,36 @@ import org.testng.annotations.Test;
 import base.TestNGbase;
 import constant.Constants;
 import constant.Message;
+import pages.HomePage;
 import pages.LoginPage;
 import pages.NewsPage;
 import utilities.ExcelUtility;
 
 public class NewsTest extends TestNGbase{
-@Test
+	HomePage homePage;
+	NewsPage newspage;
+@Test(description="verify add news")
 public void verifyaddnews() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(6, 0, Constants.LOGINSHEET );
 	String passwordValue=ExcelUtility.getStringData(6, 1, Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterusername(usernameValue);
-	loginpage.enterpassword(passwordValue);
-	loginpage.signin();
-	NewsPage newspage = new NewsPage(driver);
-	newspage.clicknewstile();
-	newspage.clickaddnewsbutton();
-	newspage.enternews("This is a sample news");
-	newspage.clicksavenews();
+	loginpage.enterusername(usernameValue).enterpassword(passwordValue);
+	homePage=loginpage.signin(); 
+	
+	newspage=homePage.clicknewstile();
+	newspage.clickaddnewsbutton().enternews("This is a sample news").clicksavenews();
+	
 	boolean isAlertDisplayed = newspage.isnewsadded();
 	Assert.assertTrue(isAlertDisplayed, Message.NEWS_CREATION_ERROR);
 }
-@Test
+@Test(description="verify reset news")
 public void verifyresetnews() throws IOException {
 	String usernameValue=ExcelUtility.getStringData(6, 0, Constants.LOGINSHEET);
 	String passwordValue=ExcelUtility.getStringData(6, 1, Constants.LOGINSHEET);
 	LoginPage loginpage = new LoginPage(driver);
-	loginpage.enterusername(usernameValue);
-	loginpage.enterpassword(passwordValue);
-	loginpage.signin();
-	NewsPage newspage = new NewsPage(driver);
-	newspage.clicknewstiles();
+	loginpage.enterusername(usernameValue).enterpassword(passwordValue);
+	homePage=loginpage.signin();
+	newspage=homePage.clicknewstile();
 	
 			newspage.clickresetbutton();
 			String expectedUrl = "https://groceryapp.uniqassosiates.com/admin/list-news";
