@@ -9,10 +9,12 @@ import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
 import utilities.Pageutility;
+import utilities.WaitUtility;
 
 public class AdminPage {
     public WebDriver driver;
-    Pageutility pageUtility = new Pageutility();  
+    Pageutility pageUtility = new Pageutility(); 
+    WaitUtility waitutility= new WaitUtility();
 
     public AdminPage(WebDriver driver) {
         this.driver = driver;
@@ -74,6 +76,7 @@ public class AdminPage {
 
     public AdminPage clicksearchbutton() {
         pageUtility.clickonelement(searchbutton);  
+        waitutility.waitUntilClickable(driver, searchbutton);
         return this;
     }
 
@@ -95,6 +98,7 @@ public class AdminPage {
 
     public AdminPage clicksearchfield() {
         pageUtility.clickonelement(searchfield);
+        
         return this;
     }
 
